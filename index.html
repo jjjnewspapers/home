@@ -13,7 +13,7 @@
     height:100%;
   }
   body{
-    background-image:url('bg.jpg');
+    background-image:url("bg.jpg");
   }
   header{
     position:absolute;
@@ -25,7 +25,7 @@
 
   header div{
     position:absolute;
-    top:25%;
+    top:25vh;
     width:100%;
     color:white;
     text-align:center;
@@ -33,21 +33,21 @@
 
   header h1{
     font-family: 'Anton';
-    font-size: 70px;
+    font-size: 5vw;
     font-variant: small-caps;
-    letter-spacing:4px;
+    letter-spacing:0.07em;
   }
   
   header h3{
     font-family: 'Anton';
-    font-size: 85px;
+    font-size: 6.25em;
     color:white;
-    letter-spacing: 4px;
+    letter-spacing: 0.03em;
     padding:10px;
     margin:10px;
   }
-  span{
-    font-size:47px;
+  h3 span{
+    font-size:0.55em;
   }
   hr{
     width:75%;
@@ -56,7 +56,7 @@
   
   header p{
     font-family: 'Abel';
-    font-size:30px;
+    font-size:2em;
   }
   
   .button1{
@@ -81,7 +81,7 @@
     position:absolute;
     background-color:rgba(0,0,0,0.6);
     left:20%;
-    height:200%;
+    height:250%;
     width:60%;
     z-index:-4;
     
@@ -89,7 +89,7 @@
   
   section{
     position:absolute;
-    top:15%;
+    top:12%;
     width:100%;
   }
   img{
@@ -109,8 +109,48 @@
     top:280px;
     left:35px;
   }
-
-  
+  h4{
+    font-family: 'Abel';
+    font-size:30px;
+    padding:7px;
+    margin:7px;
+    color:black;
+  }
+  h5{
+    font-family: 'Abel';
+    font-size:35px;
+    padding:7px;
+    margin:7px;
+    margin-left:50px;
+    color:black;
+    font-weight:bold;
+  }
+  h4 span{
+    font-family: 'Anton';
+    font-size:43px;
+    letter-spacing:1px;
+    padding:7px;
+    color:black;
+  }
+   #fourth{
+     padding:10px;
+     margin:auto;
+     margin-top:30px;
+     height:295px;
+     width:784px;
+     background-color:#f8ffc5;
+   }
+   #icon1{
+     float:left;
+     height:45px;
+     margin:0px;
+   }
+   #icon2{
+     float:left;
+     height:55px;
+     margin:0px;
+     margin-left:8px;
+   }
   </style>
 </head>
 
@@ -120,7 +160,7 @@
       <div>
       <h1>JJJ Newspapers & Magazines, Inc.</h1>
       <hr>
-      <p>some catchphrase here</p>
+      <p>Get the news in print daily, first hour in the morning!</p>
       <br>
       <button class="button1">Click to learn more</button>
       </div>
@@ -130,9 +170,7 @@
       <div class="container-fluid">
       <ul class="nav navbar-nav">
       <li class="active"><a>Home</a></li>
-      <li><a>Page 1</a></li>
-      <li><a>Page 2</a></li>
-      <li><a>Page 3</a></li>
+      <li><a>Contacts</a></li>
       </ul>
       </div>
     </nav>
@@ -145,8 +183,17 @@
     </div>
     <img src="second.png">
     <img src="third.png">
+    <div id="fourth">
+      <h4>For inquiries, contact <span>Jorge Puno Diomampo Jr.</span></h4>
+      <img src="telephone.png" id="icon1">
+      <h5>929-1597</h5>
+      <h5>454-0011</h5>
+      <img src="cell.png" id="icon2">
+    </div>
     </section>
+    
     </main>
+
 
     </body>
     
@@ -163,7 +210,6 @@
               $("nav").fadeIn(500);
               $("header h3").fadeIn(500, function(){
                 $("main").fadeIn(1000);
-                $("article").hide();
               });
     });
       });
@@ -171,7 +217,7 @@
       
     });
     
+    //$("li:")
 });
 
 </script>
-
