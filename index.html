@@ -33,39 +33,42 @@
 
   header h1{
     font-family: 'Anton';
-    font-size: 5vw;
+    font-size: 5vmax;
     font-variant: small-caps;
-    letter-spacing:0.07em;
-  }
-  
-  header h3{
-    font-family: 'Anton';
-    font-size: 6.25em;
-    color:white;
-    letter-spacing: 0.03em;
-    padding:10px;
-    margin:10px;
-  }
-  h3 span{
-    font-size:0.55em;
-  }
-  hr{
-    width:75%;
-    height:8px;
+    letter-spacing:0.3vw;
   }
   
   header p{
     font-family: 'Abel';
-    font-size:2em;
+    font-size:2.2vmax;
+  }
+  header h3{
+    font-family: 'Anton';
+    font-size: 6.5vw;
+    color:white;
+    letter-spacing: 0.03em;
+    padding:10px;
+    margin:10px;
   }
   
   .button1{
     border:1px solid white;
     background-color:rgb(0, 0, 77);
     color:white;
-    font-size:20px;
+    font-size:1.5vmax;
     padding: 15px 32px;
   }
+  
+  h3 span{
+    font-size:3.25vw;
+  }
+  hr{
+    width:75%;
+    height:1.5vh;
+  }
+  
+  
+  
   
   .button1:hover{
     background-color:white;
@@ -73,11 +76,11 @@
   }
   nav{
     position:absolute;
-    top:20%;
+    top:10vw;
     width:100%;
   }
   
-  main{
+  section{
     position:absolute;
     background-color:rgba(0,0,0,0.6);
     left:20%;
@@ -87,10 +90,19 @@
     
   }
   
-  section{
+  /*section{
     position:absolute;
     top:12%;
     width:100%;
+  }*/
+  #thing{
+    height:15vw;
+  }
+  
+  #first{
+    margin:auto;
+    position:relative;
+    width:60%;
   }
   img{
     display:block;
@@ -98,6 +110,7 @@
     margin:auto;    
     margin-top:30px;
   }
+  
   .button2{
     border:1px solid black;
     border-radius:5px;
@@ -106,7 +119,7 @@
     font-size:15px;
     padding: 10px 25px;
     position:absolute;
-    top:280px;
+    top:250px;
     left:35px;
   }
   h4{
@@ -154,7 +167,7 @@
   </style>
 </head>
 
-<body id="top">
+<body>
     <header>
       <h3>JJJ <span>Newspapers & Magazines, Inc.</span></h3>
       <div>
@@ -174,47 +187,54 @@
       </ul>
       </div>
     </nav>
-
-    <main>
+    
     <section>
-    <div>
-    <img src="first.png">
-    <button class="button2">See list</button>
-    </div>
-    <img src="second.png">
-    <img src="third.png">
-    <div id="fourth">
-      <h4>For inquiries, contact <span>Jorge Puno Diomampo Jr.</span></h4>
-      <img src="telephone.png" id="icon1">
-      <h5>929-1597</h5>
-      <h5>454-0011</h5>
-      <img src="cell.png" id="icon2">
-    </div>
     </section>
     
+    <main>
+      <div id="thing">
+      </div>
+      
+      <div id="first">
+        <img src="first.png">
+        <button class="button2">See list</button>
+      </div>
+      
+        <img src="second.png">
+        <img src="third.png">
+      
+      <div id="fourth">
+        <h4>For inquiries, contact <span>Jorge Puno Diomampo Jr.</span></h4>
+        <img src="telephone.png" id="icon1">
+        <h5>929-1597</h5>
+        <h5>454-0011</h5>
+        <img src="cell.png" id="icon2">
+        <h5>0998 457 7054</h5>
+      </div>
     </main>
 
 
-    </body>
+</body>
     
 <script>
   $(document).ready(function(){
     $("nav").hide();
     $("main").hide();
+    $("section").hide();
     $("header h3").hide();
     
     $(".button1").click(function(){
       $("hr").animate({width:"0px"},800,function(){
-        $("header div").fadeOut(500, function(){
-        $("header").animate({height:"20%"},1000,function(){
-              $("nav").fadeIn(500);
-              $("header h3").fadeIn(500, function(){
-                $("main").fadeIn(1000);
-              });
-    });
+      $("header div").fadeOut(500, function(){
+      $("header").animate({height:"10vw"},1000,function(){
+      $("nav").fadeIn(500);
+      $("header h3").fadeIn(500, function(){
+      $("main").fadeIn(1000);
+      $('section').fadeIn(1000);
+      });
+      });
       });
       })
-      
     });
     
     //$("li:")
