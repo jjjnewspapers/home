@@ -1,23 +1,23 @@
 <head>
   <meta charset="utf-8">
+  <meta name="keywords" content="newspapers, newspaper delivery, magazines">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-  <title>JJJ Newspapers and Articles, Inc.</title>
+  <title>JJJ Newspapers and Magazines, Inc.</title>
   <style>
   
   html, body{
     height:100%;
   }
+  
   body{
     background-image:url("bg.jpg");
   }
   
-  
-   
   header{
     position:absolute;
     top:0px;
@@ -25,7 +25,7 @@
     height:100%;
     background-color:rgb(0, 0, 77);
   }
-
+  
   header div{
     position:absolute;
     top:25vh;
@@ -65,18 +65,17 @@
   h3 span{
     font-size:3.25vw;
   }
+  
   hr{
     width:75%;
     height:1.5vh;
   }
   
-  
-  
-  
   .button1:hover{
     background-color:white;
     color:rgb(0, 0, 77);
   }
+  
   nav{
     margin-top:10vw;
     width:100%;
@@ -94,22 +93,27 @@
   
   #first{
     margin:auto;
-    width:784px;
+    width:100%;
     height:295px;
     background-color:yellow;
   }
+  
   h6{
     color:black;
-    font-size:3vw;
+    font-size:3.15vmax;
     font-family:'Abel';
     padding:10px;
     margin:10px;
-    padding-bottom:3px;
+    padding-bottom:2px;
     margin:3px;
     letter-spacing:0.05vw;
     line-height: 125%;
-
   }
+  
+  #delivers{
+    font-size:3.7vw;
+  }
+  
   .button2{
     border:1px solid black;
     border-radius:5px;
@@ -119,6 +123,7 @@
     padding: 10px 25px;
     margin-left:10px;
   }
+  
   #first .col-sm-5 div{
     width:95%;
     height:295px;
@@ -146,19 +151,19 @@
      padding:10px;
      margin:auto;
      height:295px;
-     width:784px;
+     width:auto;
      background-color:#f8ffc5;
   }
   h4{
     font-family: 'Abel';
-    font-size:2vw;
+    font-size:2.1vw;
     padding:7px;
     margin:7px;
     color:black;
   }
   h4 span{
     font-family: 'Anton';
-    font-size:3.4vw;
+    font-size:3.6vw;
     letter-spacing:0.05vw;
     padding:7px;
     color:black;
@@ -176,27 +181,27 @@
      padding:35px 70px;
      margin:auto;
      height:295px;
-     width:784px;
+     width:auto;
      background-color:yellow;
      text-align:center;
 
   }
   #cover p{
-    font-size:40px;
+    font-size:3.7vmax;
     font-family:'Abel';
     color:black;
   }
    @media only screen and (max-width:800px){
-    img, #fourth, #first{
-    width:90vw;
+    #cover, #fourth, #first{
+    width:90%;
     padding:0px;
     margin:auto;
     }
     #first{
-      margin-top:30vw;
       height:auto;
     }
     #first .col-sm-7{
+      width:100%;
       text-align: center;
       height:auto;
     }
@@ -213,7 +218,39 @@
      #first .col-sm-5 img{
       width:100%;
     }
-   
+    section{
+      margin:5px 0px;
+      padding:0px;
+      width:100%;
+    }
+    h6, #delivers{
+      padding:1vw;
+      font-size:4vmax;
+      letter-spacing:0px;
+      line-height:auto;
+    }
+    #cover p{
+      font-size:4vmax;
+      padding:10px;
+    }
+    #fourth, #cover{
+      height:auto;
+    }
+    #cover button{
+      margin-bottom: 10px;
+    }
+    h4, h4 span, h5{
+      font-size:4vmax;
+    }
+    h4{
+      text-align:center;
+    }
+    #fourth col-sm-8{
+      width:100%;
+    }
+    h2{
+      font-size:5vmax;
+    }
   }
    
   </style>
@@ -249,9 +286,9 @@
         <div class="row">
           <div class="col-sm-7">
             <div>
-            <h6><span style="font-size:3.5vw;"><b>Delivers</b></span> <span style="font-family:Anton;">broadsheets, tabloids, </span> and <span style="font-family:Anton;">magazines,</span>
+            <h6><span id="delivers"><b>Delivers</b></span> <span style="font-family:Anton;">broadsheets, tabloids, </span> and <span style="font-family:Anton;">magazines,</span>
             both <b>local and international</b></h6>
-            <button class="button2"><a href="list.html">See list</a></button>
+            <a href="list.html"><button class="button2">See list</button></a>
             </div>
           </div>
           <div class="col-sm-5">
@@ -287,6 +324,10 @@
         <img src="third.png" alt="news" width="460" height="345">
 
       </div>
+      <div class="item">
+        <img src="philgeps.png" alt="jjj philgeps" width="460" height="345">
+
+      </div>
     
     </div>
 
@@ -304,7 +345,7 @@
 
         <section>
           <div id="cover">
-            <p> Get the news in print, <b>daily</b>, <br>from <span style="font-size:55px;"><b>JJJ</b></span>, <b>where</b> and <b>when</b> you want it.</p>
+            <p> Get the news in print, <b>daily</b>, from <b>JJJ</b>, <b>where</b> and <b>when</b> you want it.</p>
             <button class="button2">Inquire Now!</button>
           </div>
       <div id="fourth">
@@ -312,7 +353,7 @@
         <div class="row">
           <div class="col-sm-4">
           <h5><span class="glyphicon glyphicon-phone-alt"></span>        929-1597</h5>
-          <h5>&#160;&#160;&#160;&#160;&#160;&#160;454-0011</h5>
+          <h5> or  454-0011</h5>
           <h5><span class="glyphicon glyphicon-phone"></span>        09984577054</h5>
           </div>
           <div class="col-sm-8">
