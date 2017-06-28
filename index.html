@@ -62,8 +62,8 @@
     padding: 15px 32px;
   }
   
-  h3 span{
-    font-size:3.25vw;
+   header img{
+    height:100%;
   }
   
   hr{
@@ -258,7 +258,7 @@
 
 <body>
     <header>
-      <h3>JJJ <span>Newspapers & Magazines, Inc.</span></h3>
+      <img src="logo.PNG" alt="JJJ logo">
       <div>
       <h1>JJJ Newspapers & Magazines, Inc.</h1>
       <hr>
@@ -372,14 +372,14 @@
   $(document).ready(function(){
     $("nav").hide();
     $("main").hide();
-    $("header h3").hide();
+    $("header img").hide();
     
     $(".button1").click(function(){
       $("hr").animate({width:"0px"},800,function(){
       $("header div").fadeOut(500, function(){
       $("header").animate({height:"10vw"},1000,function(){
       $("nav").fadeIn(500);
-      $("header h3").fadeIn(500, function(){
+      $("header img").fadeIn(500, function(){
       $("main").fadeIn(1000);
       $("#fourth").hide();
       });
