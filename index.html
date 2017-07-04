@@ -417,15 +417,16 @@
 });
 
 function initMap() {
-  var jjj = {lat: 14.6601, lng: 121.0443};
+  var jjj = {lat: 14.66015, lng: 121.04439};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 5,
+    zoom: 10,
     center: jjj
   });
   var marker = new google.maps.Marker({
-    position: jjj,
-    map: map
+    position: jjj
   });
+  marker.setMap(map);
+
 }
 
 </script>
