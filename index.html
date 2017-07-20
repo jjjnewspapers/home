@@ -22,57 +22,12 @@
     position:absolute;
     top:0px;
     width:100%;
-    height:100%;
+    height:10vw;
     background-color:rgb(0, 0, 77);
   }
   
-  header div{
-    position:absolute;
-    top:25vh;
-    width:100%;
-    color:white;
-    text-align:center;
-  }
-
-  header h1{
-    font-family: 'Anton';
-    font-size: 5vmax;
-    font-variant: small-caps;
-    letter-spacing:0.3vw;
-  }
-  
-  header p{
-    font-family: 'Abel';
-    font-size:2.2vmax;
-  }
-  header h3{
-    font-family: 'Anton';
-    font-size: 6.5vw;
-    color:white;
-    letter-spacing: 0.03em;
-    padding:10px;
-    margin:10px;
-  }
-  
-  .button1{
-    border:1px solid white;
-    background-color:rgb(0, 0, 77);
-    color:white;
-    font-size:1.5vmax;
-    padding: 15px 32px;
-  }
   header img{
     height:100%;
-  }
-  
-  hr{
-    width:75%;
-    height:1.5vh;
-  }
-  
-  .button1:hover{
-    background-color:white;
-    color:rgb(0, 0, 77);
   }
   
   nav{
@@ -113,7 +68,7 @@
     font-size:3.7vw;
   }
   
-  .button2{
+  button{
     border:1px solid black;
     border-radius:5px;
     background-color:black;
@@ -122,24 +77,23 @@
     padding: 10px 25px;
     margin:1vmax;
     margin-top:0px;
-
   }
   
-  #first .col-sm-5 div, #cover .col-sm-5 div{
+  .col-sm-5 div{
     width:95%;
     height:295px;
     overflow:hidden;
   }
-  #first .col-sm-5 div img, #cover .col-sm-5 div img{
+  
+  .col-sm-5 div img{
     height:295px;
     margin:0px;
     padding:0px;
   }
-  #myCarousel{
-    margin:auto;
-  }
-  #myCarousel img{
-    width:100%;
+  #first button:hover{
+    background-color:yellow;
+    color:black;
+    font-weight: bold;
   }
   h2{
     font-family:'Anton';
@@ -147,30 +101,17 @@
     color:white;
     text-align:center;
   }
-  #fourth{
-     padding:10px;
-     margin:auto;
-     height:auto;
-     width:auto;
-     background-color:#f8ffc5;
+  
+  #myCarousel{
+    margin:auto;
   }
-  h4{
-    font-family: 'Abel';
-    font-size:2.1vw;
-    padding:7px;
-    margin:7px;
-    color:black;
-  }
-  h4 #name{
-    font-family: 'Anton';
-    font-size:3.6vw;
-    letter-spacing:0.05vw;
-    padding:7px;
-    color:black;
+  
+  #myCarousel img{
+    width:100%;
   }
   
   #cover{
-     margin:auto;
+    margin:auto;
     width:100%;
     height:auto;
     background-color:black;
@@ -180,47 +121,82 @@
     color:white;
     padding:0.5vmax 1vmax;
   }
+  
   #cover h6 span{
     color:#FFD700	;
   }
+  
   #cover button{
     border:1px solid #FFD700;
     background-color: black;
     color:#FFD700;
   }
-  #fourth .col-sm-5{
-    padding:7px;
+  #cover button:hover{
+    background-color:#FFD700;
+    color:black;
   }
+  #contact{
+    margin:auto;
+    width:100%;
+    height:auto;
+    padding:10px;
+    background-color:#f8ffc5;
+  }
+  
+  h3{
+    font-family: 'Abel';
+    font-size:2.2vw;
+    color:black;
+    text-align:center;
+  }
+  
+  h3 span{
+    font-family: 'Anton';
+    font-size:3.5vw;
+    letter-spacing:0.05vw;
+    padding:7px;
+    color:black;
+  }
+  
+  h4{
+    font-family: 'Abel';
+    font-size:2vw;
+    padding:7px;
+    margin:7px;
+    color:black;
+  }
+  
   #map{
-    width:95%;
+    width:100%;
     height:22vmax;
     border:1px solid black;
   }
+  
    @media only screen and (max-width:800px){
-    #cover, #fourth, #first{
+    #cover, #contact, #first, #myCarousel{
     width:90%;
-    padding:0px;
+    /*padding:0px;*/
     margin:auto;
     }
     #first{
       height:auto;
     }
-    #first .col-sm-7{
+    .col-sm-7{
       width:100%;
       text-align: center;
       height:auto;
     }
-    #first .col-sm-7 div{
+    .col-sm-7 div{
       width:60%;
       margin:auto;
       padding:10px;
     }
-    #first .col-sm-5 div{
+    .col-sm-5 div{
       width:100%;
       height:auto;
       overflow:visible;
     }
-     #first .col-sm-5 img{
+    .col-sm-5 img{
       width:100%;
     }
     section{
@@ -234,24 +210,15 @@
       letter-spacing:0px;
       line-height:auto;
     }
-    #cover p{
-      font-size:4vmax;
-      padding:10px;
-    }
-    #fourth, #cover{
-      height:auto;
-    }
     #cover button{
       margin-bottom: 10px;
     }
-    h4, h4 span, h5{
+    h3, h4{
       font-size:4vmax;
     }
-    h4{
-      text-align:center;
-    }
-    #fourth col-sm-8{
-      width:100%;
+    
+    h3 span{
+      font-size:5vmax;
     }
     h2{
       font-size:5vmax;
@@ -261,22 +228,16 @@
   </style>
 </head>
 
-<body>
+<body id="home">
     <header>
       <img src="logo.PNG" alt="JJJ logo">
-      <div>
-      <h1>JJJ Newspapers & Magazines, Inc.</h1>
-      <hr>
-      <p>Get the news in print daily, first hour in the morning!</p>
-      <br>
-      <button class="button1">Click to learn more</button>
-      </div>
     </header>
     
     <nav class="navbar-inverse">
       <div class="container-fluid">
       <ul class="nav navbar-nav">
       <li class="active"><a>Home</a></li>
+      <li><a href="#contact">Contact Us</a></li>
       <li><a href="clients.html">Clients' Directory</a></li>
       </ul>
       </div>
@@ -293,7 +254,7 @@
             <div>
             <h6><span class="delivers"><b>Delivers</b></span> <span style="font-family:Anton;">broadsheets, tabloids, </span> and <span style="font-family:Anton;">magazines,</span>
             both <b>local and international</b></h6>
-            <a href="list.html"><button class="button2">See list</button></a>
+            <a href="list.html" target="_blank"><button class="button2">See list</button></a>
             </div>
           </div>
           <div class="col-sm-5">
@@ -366,18 +327,15 @@
         </div>
         </div>
         
-        <div id="fourth">
-          <h4>For inquiries, contact <span id="name">Jorge Puno Diomampo Jr.</span></h4>
+        <div id="contact">
+          <h3>For inquiries, contact <span id="name">Jorge Puno Diomampo Jr.</span></h3>
           
           <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-12">
             <h4><span class="glyphicon glyphicon-phone-alt"></span>        929-1597 / 454-0011</h4>
             <h4><span class="glyphicon glyphicon-phone"></span>        09175260241</h4>
-            <h4><span class="glyphicon glyphicon-envelope"></span>  jorge_mel_diomampo@yahoo.com</h4>
-            <h4>jjjnews@yahoo.com</h4>
+            <h4><span class="glyphicon glyphicon-envelope"></span>  jorge_mel_diomampo@yahoo.com / jjjnews@yahoo.com</h4>
             <h4><span class="glyphicon glyphicon-home"></span> Mezzanine Floor, 3J Heights Building, 35 Visayas Avenue, Quezon City 1100</h4>
-            </div>
-            <div class="col-sm-5">
               <div id="map"></div>
             </div>
           </div>
@@ -389,46 +347,7 @@
 
 </body>
     
-<script>
-  $(document).ready(function(){
-    $("nav").hide();
-    $("main").hide();
-    $("header img").hide();
-    
-    $(".button1").click(function(){
-      $("hr").animate({width:"0px"},800,function(){
-      $("header div").fadeOut(500, function(){
-      $("header").animate({height:"10vw"},1000,function(){
-      $("nav").fadeIn(500);
-      $("header img").fadeIn(500, function(){
-      $("main").fadeIn(1000);
-      $("#fourth").hide();
-      });
-      });
-      });
-      })
-    });
-    
-    
-    $("#cover button").click(function(){
-      $("#cover").hide();
-      $("#fourth").fadeIn(500);
-    });
-});
+<script src="main.js"></script>
 
-function initMap() {
-  var jjj = {lat: 14.66015, lng: 121.04439};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
-    center: jjj
-  });
-  var marker = new google.maps.Marker({
-    position: jjj
-  });
-  marker.setMap(map);
-
-}
-
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPI6Q6lAmOpxAOnli69qPhadCBR35s4XI&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPI6Q6lAmOpxAOnli69qPhadCBR35s4XI&callback=initMap">
 </script>
